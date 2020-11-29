@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .flex-m {
+    display: flex;
+    flex-direction: column; /* Stack on top */
+  }
+  .box-a {
+    order: 2; /* Go down, bring Box B up */
+  }
+}
+
+section,
+footer {
+  padding: 20px 0;
+}

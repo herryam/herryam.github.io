@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Profil Herry</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <body id="home" class="scrollspy">
+
+      <!-- navbar -->
+        <div class="navbar-fixed">
+            <nav class="grey">
+            <div class="container">
+                <div class="nav-wrapper">
+                  <a href="#home" class="brand-logo" style="margin-top: 0.25em"><img src="https://www.google.com/s2/favicons?sz=32&domain=http://herry-anugerah.blogspot.com/" style="border: 4px solid"></a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+
+      <!-- side nav -->
+      <ul class="sidenav" id="mobile-nav" style="background-color: #e9ecef"> 
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+
+      <!-- Jumbotron -->
+      <div class="card-panel center" style="background-color: #e9ecef">
+      <img src="img/herry.JPG" class="circle" style="width: 200px; border: 5px solid #666;">
+      <h3 style="margin-top: 0em"><span id="placetextheader">Saya adalah...</span></h3>
+      <p>Sarjana Hukum | Pengelola Web</p>
+      </div>
+    
+      <!-- Tentang -->
+      <section id="about" class="about grey lighten-3 scrollspy">
+        <div class="container" style="margin-top: 7em">
+          <div class="row flex-m">
+            <div class="col m6 light box-a">
+              <h5>I am professional</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem consequuntur nostrum soluta corporis ex blanditiis. Cupiditate aliquam modi pariatur, eius, quae ut illum, distinctio omnis unde ab soluta dignissimos!</p>
+            </div>
+            <div class="col m6 box-b">
+              <img src="img/fh.png" style="width: 300px">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Layanan -->
+      <section id="services" class="services grey lighten-3 scrollspy">
+        <div class="container">
+          <div class="row">
+            <h3 class="light center">Layanan</h3>
+            <div class="col m4 s12" data-aos="fade-up">
+              <div class="card-panel center">
+                <i class="material-icons medium">desktop_windows</i>
+                <h5>Web Development</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aliquam.</p>
+              </div>
+            </div>
+            <div class="col m4 s12" data-aos="fade-up">
+              <div class="card-panel center">
+                <i class="material-icons medium">desktop_windows</i>
+                <h5>Mobile App</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aliquam.</p>
+              </div>
+            </div>
+            <div class="col m4 s12" data-aos="fade-up">
+              <div class="card-panel center">
+                <i class="material-icons medium">desktop_windows</i>
+                <h5>Game Development</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portofolio -->
+      <section id="portfolio" class="portfolio scrollspy">
+        <div class="container">
+          <h3 class="light center">Portofolio</h3>
+          <div class="row">
+            <div class="col m6 s12">
+              <img src="img/herry.JPG" class="responsive-img materialboxed">
+            </div>
+            <div class="col m6 s12">
+              <img src="img/herry.JPG" class="responsive-img materialboxed">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m6 s12">
+              <img src="img/herry.JPG" class="responsive-img materialboxed">
+            </div>
+            <div class="col m6 s12">
+              <img src="img/herry.JPG" class="responsive-img materialboxed">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="contact" class="contact grey lighten-3 scrollspy">
+        <div class="container">
+          <h3 class="light center">Kontak</h3>
+          <div class="row">
+            <div class="col m5 s12">
+              <div class="card-panel grey center white-text">
+                <i class="material-icons">email</i>
+                <h5>Kontak</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae.</p>
+              </div>
+              <ul class="collection with-header">
+                <li class="collection-header"><h4>Alamat</h4></li>
+                <li class="collection-item">Lorem ipsum dolor sit amet.</li>
+                <li class="collection-item">Sumatera Utara, Indonesia</li>
+              </ul>
+            </div>
+            <div class="col m7 s12">
+              <form id="whatsapp">
+                <input class="tujuan" type="hidden" id="noAdmin">
+                <div class="card-panel">
+                  <h5>Silakan isi formulir di bawah ini.</h5>
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" class="nama">
+                    <label for="name">Nama</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" name="email" id="email" class="nowhatsapp">
+                    <label for="email">Surel</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea name="message" id="message" class="alamat materialize-textarea"></textarea>
+                    <label for="message">Pesan</label>
+                  </div>
+                  <button class="btn grey"><a class="submit"><font color="white">Kirim</font></a></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="grey white-text center">
+        <p class="flow-text">Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> - Herry Anugerah</p>
+      </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+      </script>
+
+      <script>      
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+      </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            duration: 1200,
+          });
+      </script>
+
+<script type="text/javascript">
+  function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function showLetter(item, selectedIndex) {
+      var selectedIndex = selectedIndex ? selectedIndex : 0
+      var demo_input = document.getElementById('placetextheader');
+
+      if (selectedIndex <= item.length) {
+          var currentIndex = selectedIndex++;
+          demo_input.textContent = item.substr(0, currentIndex);
+          await sleep(70);
+          showLetter(item, selectedIndex);
+      }
+  };
+
+  async function typeLetter() {
+      // var demo_input = document.getElementById('placetextheader')[0];
+
+      var items = [
+          "Herry Anugerah"
+      ];
+
+      for (var i = 0; i < items.length; i++) {
+          var selectedItem = items[i];
+
+          await sleep(1700);
+          showLetter(selectedItem)
+      }
+  }
+
+  typeLetter();
+</script>
+
+<script>
+  const scroll = document.querySelectorAll('.scrollspy');
+  M.ScrollSpy.init(scroll, {
+    scrollOffset: 50
+  });
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+  </html>
