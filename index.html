@@ -242,7 +242,12 @@ function myFunction() {
     btnLoading.classList.toggle('hide')
     btnKirim.classList.toggle('hide')
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+      // tampilkan tombol kirim, hilangkan tombol loading
+      btnLoading.classList.toggle('hide')
+      btnKirim.classList.toggle('hide')
+      console.log('Success!', response)
+    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
