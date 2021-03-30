@@ -246,6 +246,10 @@ function myFunction() {
       // tampilkan tombol kirim, hilangkan tombol loading
       btnLoading.classList.toggle('hide')
       btnKirim.classList.toggle('hide')
+      // tampilkan alert
+      myAlert.classList.toggle('hide')
+      // reset formnya
+      form.reset()
       console.log('Success!', response)
     })
       .catch(error => console.error('Error!', error.message))
