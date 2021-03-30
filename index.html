@@ -151,7 +151,7 @@
               <form name="submit-to-google-sheet">
                 <div class="card-panel">
                   <h5>Hubungi Saya</h5>
-                  <div class="card-panel" style="background-color: #d1e7dd;"><strong>Terima kasih</strong>. Pesan Anda telah terkirim.</div>
+                  <div class="card-panel hide my-alert" style="background-color: #d1e7dd;"><strong>Terima kasih</strong>. Pesan Anda telah terkirim.</div>
                   <div class="input-field">
                     <input type="text" name="name" id="name">
                     <label for="name">Nama</label>
@@ -231,9 +231,16 @@ function myFunction() {
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw26OlOIJtBjewxPkL4NzS99P9SUfL4MlJwa6EypO8Jx7oyIPbt6QJWv4N1YDUwjChi/exec'
   const form = document.forms['submit-to-google-sheet']
+  const btnKirim = document.querySelector('.btn-kirim')
+  const btnLoading = document.querySelector('.btn-loading')
+  const btnAlert = document.querySelector('.my-alert')
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    // ketika tombol submit diklik
+    // tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('hide')
+    btnKirim.classList.toggle('hide')
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
