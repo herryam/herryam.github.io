@@ -148,23 +148,22 @@
               </ul>
             </div>
             <div class="col m7 s12" data-aos="zoom-in" style="margin-bottom: -2em; margin-top: 1.5em;">
-              <form id="whatsapp">
-                <input class="tujuan" type="hidden" id="noAdmin">
+              <form name="submit-to-google-sheet">
                 <div class="card-panel">
                   <h5>Hubungi Saya.</h5>
                   <div class="input-field">
-                    <input type="text" name="name" id="name" class="nama">
+                    <input type="text" name="name" id="name">
                     <label for="name">Nama</label>
                   </div>
                   <div class="input-field">
-                    <input type="email" name="email" id="email" class="nowhatsapp">
+                    <input type="email" name="email" id="email">
                     <label for="email">Surel</label>
                   </div>
                   <div class="input-field">
-                    <textarea name="message" id="message" class="alamat materialize-textarea"></textarea>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
                     <label for="message">Pesan</label>
                   </div>
-                  <button class="btn hide" style="background-color: #044cdd;"><a class="submit"><font color="white">Kirim</font></a></button>
+                  <button class="btn" style="background-color: #044cdd;"><a class="submit"><font color="white">Kirim</font></a></button>
                 </div>
               </form>
             </div>
@@ -215,6 +214,18 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw26OlOIJtBjewxPkL4NzS99P9SUfL4MlJwa6EypO8Jx7oyIPbt6QJWv4N1YDUwjChi/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 
     </body>
