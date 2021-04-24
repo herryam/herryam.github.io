@@ -207,6 +207,12 @@
           });
       </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+<script>
+  gsap.from('.card-panel img', { duration: 1, rotateY: 360,  opacity: 0 });
+</script>
+
 <script>
   const scroll = document.querySelectorAll('.scrollspy');
   M.ScrollSpy.init(scroll, {
